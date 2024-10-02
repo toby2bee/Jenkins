@@ -1,0 +1,19 @@
+          -----------------------------------------
+          ----  CHANGE hello TO YOUR JOB NAME -----
+          -----------------------------------------
+http://localhost:8080/job/hello/lastSuccessfulBuild/api/json?tree=result
+
+---------------------------------------------------------------------------
+---------------------------------------------------------------------------
+
+          -----------------------------------------
+          ----  CHANGE hello TO YOUR JOB NAME -----
+          -----------------------------------------
+http://localhost:8080/job/hello/build?token=abcde
+
+
+
+Docs:
+https://www.jenkins.io/doc/book/using/remote-access-api/
+
+

@@ -1,0 +1,32 @@
+------------------------------
+--------  Scripted -----------
+------------------------------
+node {  
+    stage('Build') { 
+        try{
+           echo 1/0
+        }catch(e){
+            echo 'divison by 0'
+        }
+    }
+}
+
+------------------------------
+-------- Decalartive ---------
+------------------------------
+pipeline { 
+agent any 
+  stages { 
+    stage("test") {   
+      steps {    
+       script {       
+         try {        
+          echo 'do your stuff' 
+         } catch (Exception e) {           
+          echo 'Handle the exception!'     
+         }
+      }
+    }
+  }
+ }
+}

@@ -1,0 +1,6 @@
+pipeline {
+  options {
+    buildDiscarder(logRotator(numToKeepStr: ‘20', daysToKeepStr: ‘10'))
+  }
+  ...
+}

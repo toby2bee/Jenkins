@@ -1,0 +1,27 @@
+------------------------------
+--------  Scripted -----------
+------------------------------
+node {  
+def x = “456”
+    stage('Build') { 
+           echo x
+    }
+}
+
+
+------------------------------
+-------- Decalartive ---------
+------------------------------
+pipeline {
+    agent any
+    environment {
+        MY_VAR = '123'
+    }
+    stages {
+        stage('Build') {
+            steps {
+                echo MY_VAR
+            }
+        }
+    }
+}

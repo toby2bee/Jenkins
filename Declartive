@@ -1,0 +1,16 @@
+pipeline {
+ agent any
+ stages {
+  stage("test") {
+   steps {
+    script {
+     try {
+      echo 'do your stuff'
+     } catch (Exception e) {
+      echo 'Handle the exception!'
+     }
+    }
+   }
+  }
+ }
+}
